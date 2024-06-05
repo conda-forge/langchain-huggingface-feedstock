@@ -1,5 +1,5 @@
 {% set name = "langchain-huggingface" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchain_huggingface-{{ version }}.tar.gz
-  sha256: 189c996209c1bc510ee5c0a55850050974082d0486f9dd713ea85e00eec6eeeb
+  sha256: 0637acf484c47323cf3dcc46745a93467f6955989af9b7c01e2382fe1b630aaf
 
 build:
   noarch: python
