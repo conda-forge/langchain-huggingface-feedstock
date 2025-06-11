@@ -1,5 +1,5 @@
 {% set name = "langchain-huggingface" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_huggingface-{{ version }}.tar.gz
-  sha256: 609acbfbade749bffa22acffd46d9e924a58e96cc59215d0562b8e9215b210f5
+  sha256: d1cf93fb4d4eafc8b44edcd5fba904b27cbd3fda6cdef0e2321fbcf4efcda822
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0
-    - langchain-core <1.0.0,>=0.3.59
+    - langchain-core <1.0.0,>=0.3.65
     - tokenizers >=0.19.1
     - transformers >=4.39.0
     - sentence-transformers >=2.6.0
