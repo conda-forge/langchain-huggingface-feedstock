@@ -20,7 +20,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - huggingface-hub >=0.33.4,<1.0.0
     - huggingface_hub >=0.33.4,<1.0.0
     - python >={{ python_min }},<4.0
     - langchain-core >=1.2.0,<2.0.0
